@@ -178,7 +178,7 @@ public:
 		}
 		else
 		{
-			nodes.erase(ind);
+			nodes.erase(nodes.begin() + ind);
 			nodes.shrink_to_fit();
 		}
 	}
@@ -201,8 +201,8 @@ public:
 		}
 		else
 		{
-			edes.erase(ind);
-			edes.shrink_to_fit();
+			edges.erase(edges.begin() + ind);
+			edges.shrink_to_fit();
 		}
 	}
 
